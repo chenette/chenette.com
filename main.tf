@@ -1,8 +1,8 @@
-variable "gcp_credentials" {
-  type        = string
-  sensitive   = true
-  description = "Google Cloud service account credentials"
-}
+# variable "gcp_credentials" {
+#   type        = string
+#   sensitive   = true
+#   description = "Google Cloud service account credentials"
+# }
 
 provider "google" {
   project = "chenette"

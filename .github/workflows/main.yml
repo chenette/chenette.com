@@ -26,7 +26,7 @@ jobs:
       - run: terraform fmt -check
       - run: terraform init
       - run: terraform validate -no-color
-      - run: terraform plan -no-color
+      # - run: terraform plan -no-color
       - run: terraform show
       - run: terraform apply -auto-approve
 
