@@ -28,6 +28,7 @@ jobs:
       - run: terraform validate -no-color
       # - run: terraform plan -no-color
       - run: terraform show
-      - run: gcloud projects add-iam-policy-binding "300512712029" --project="chenette" --role="roles/owner" --member="principalSet://iam.googleapis.com/projects/300512712029/locations/global/workloadIdentityPools/github/attribute.repository/mpchenette/chenette.com"
+      - run: gcloud config list account --format "value(core.account)"
+      # - run: gcloud projects add-iam-policy-binding "300512712029" --project="chenette" --role="roles/owner" --member="principalSet://iam.googleapis.com/projects/300512712029/locations/global/workloadIdentityPools/github/attribute.repository/mpchenette/chenette.com"
       - run: terraform apply -auto-approve
 
