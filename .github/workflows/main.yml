@@ -21,8 +21,8 @@ jobs:
       - uses: google-github-actions/auth@v2
         with:
           # project_id: 'chenette'
-          service_account: my-service-account@chenette.iam.gserviceaccount.com
-          workload_identity_provider: 'projects/300512712029/locations/global/workloadIdentityPools/github/providers/my-repo'
+          service_account: github-actions@chenette.iam.gserviceaccount.com #my-service-account@chenette.iam.gserviceaccount.com
+          workload_identity_provider: 'projects/300512712029/locations/global/workloadIdentityPools/github-pool/providers/github-provider' #github/providers/my-repo'
       - uses: hashicorp/setup-terraform@v3
       - run: terraform fmt -check
       - run: terraform init
