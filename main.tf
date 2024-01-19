@@ -56,8 +56,8 @@ resource "google_storage_bucket_access_control" "public_rule" {
 //////////////////////////////////////////
 
 locals {
-  project_id   = "chenette" //"my-google-project"
-  organization = "chenette" //"my-github-organization"
+  project_id   = "chenette"     //"my-google-project"
+  organization = "chenette"     //"my-github-organization"
   repo         = "chenette.com" //"my-github-repository"
 }
 
